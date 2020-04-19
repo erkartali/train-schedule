@@ -47,7 +47,7 @@ $('.submit-button').on('click', function(event) {
     var diffTime = currentTime.diff(moment(firstTimeConverted), "minutes");
     var tRemainder = diffTime % frequencyMcfrequencyface;
     var tMinutesTillTrain = frequencyMcfrequencyface - tRemainder;
-    var nextTrain = currentTime.add(tMinutesTillTrain, "minutes");
+    var nextTrain = currentTime.add(tMinutesTillTrain, "minutes").format("HH:mm");
     
     newRow.append('<td>' + nameyMcnameface + '</td>')
     newRow.append('<td>' + destinationMcdestinationface + '</td>')
